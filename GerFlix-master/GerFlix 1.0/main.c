@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "Usuario.h"
+#include "Serie.h"
 #define TAMSERIE 20
 #define TAMUSUARIO 100
 #define USUARIOS 15
@@ -24,6 +25,8 @@ int main()
     int opcion;
     printf("1- Mostrar listado de series\n2- Mostrar listado de Usuarios\n3- Mostrar listado de Usuarios y la serie que ve\n4- Mostrar la serie y los usuarios que la ven\n");
     scanf("%d",&opcion);
+    while(opcion>0&&opcion<5)
+    {
 
     switch(opcion)
         {
@@ -36,14 +39,14 @@ int main()
                 break;
 
         case 3:
-
+                mostrarUsuarioYSerie(listaDeSeries,SERIES, listaDeUsuarios,USUARIOS);
                 break;
         case 4:
 
                 break;
         }
 
-
+    }
 
 /*  1. Mostrar el listado de series
     2. Mostrar el listado de usuarios

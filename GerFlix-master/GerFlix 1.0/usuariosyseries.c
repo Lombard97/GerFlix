@@ -1,4 +1,6 @@
-/*void mostrarUsuarioYSerie(eSerie listaDeSeries[],eUsuario listaDeUsuarios[],tam)
+#include "usuariosyseries.h"
+
+void mostrarUsuarioYSerie(eSerie listaDeSeries[], eUsuario listaDeUsuarios[],int tam)
 {
     int i;
     int j;
@@ -14,5 +16,5 @@
         }
     }
 
-}*/
+}
 

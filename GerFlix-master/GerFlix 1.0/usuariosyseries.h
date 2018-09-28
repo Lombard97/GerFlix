@@ -1,18 +1,4 @@
-typedef struct
-{
-    int idSerie;
-    char nombre[50];
-    char genero[20];
-    int cantidadTemporadas;
-    int estado;
-}eSerie;
+#include "Serie.h"
+#include "Usuario.h"
 
-typedef struct
-{
-    int idUsuario;
-    char nombre[50];
-    int idSerie;
-    int estado;
-}eUsuario;
-
-void mostrarUsuarioYSerie(eSerie[],eUsuario[],int);
+void mostrarUsuarioConSuSerie(eUsuario[], int, eSerie[], int);
